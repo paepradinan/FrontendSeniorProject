@@ -1,4 +1,4 @@
-<?php
+	<?php
 
 /*
 |--------------------------------------------------------------------------
@@ -11,7 +11,20 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('home/test');
-});
+// Route::get('/', function()
+// {
+// 	return View::make('home/home');
+// });
+
+
+Route::get('/','PagesController@home');
+
+Route::get('/testt','PagesController@testt');
+
+Route::get('/stock','PagesController@stock');
+
+Route::get('/financial','PagesController@financial');
+
+Route::get('/login','PagesController@login');
+
+Route::get('/signin','PagesController@signin');
