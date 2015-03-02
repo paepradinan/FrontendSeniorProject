@@ -4,7 +4,6 @@
 	height: 45px;
 	position: fixed;
 	width: 100%;
-
 	z-index: 1000;
     border-bottom: 2px solid #ff0000;
 }
@@ -123,13 +122,36 @@ a:hover {
 	margin-left: -23px;
 	width: 50px;
 	height: 50px;
+	border: 1px solid black;
+}
+
+.navicon {
+	height: 20px;
+	width: 20px;
+	float: left;
+	display: inline;
+	padding: 0 0 0 0;
+	margin: 5 10 0 20;
+}
+
+.navheaderpanel {
+	padding: 5 0 5 5;
+	background-color: #777777;
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 11px;
+	border-bottom: 1px solid #818181;
+	text-shadow: 0px 0px 1px #cdcece;
 }
 
 .member-menu {
+	font-size: 12px;
 	background-color: #616262;
 	position: relative;
 	font-family: Arial, sans-serif;
-	padding-left: 0px;
+	padding: 4 0 10 0;
 	color: #d3a825;
 	width: 100%;
 	display: inline-block;
@@ -151,16 +173,20 @@ a:hover {
 	color: #b9b8b6;
 	display: block;
 	text-align: left;
-	padding-left: 20px;
-	height: 45px;
-	line-height: 45px;
+	padding-left: 10px;
+	height: 30px;
+	line-height: 30px;
 }
 
 .member-menu ul li a:hover {
-	background-color: #c2c4c4;
 	text-decoration: none;
-	color: #737373;
+	background-color: #7d7e7e;
 }
+
+.member-menu ul li a:hover .navicon {
+	background-color: #7d7e7e;
+}
+
 
 .input-group {
 	width: 100%;
@@ -212,14 +238,19 @@ a:hover {
 .nav-menu li a {
 	position: relative;
 	display: block;
-	padding-left: 20px;
+	padding-left: 30px;
 	color: #ddd;
 	height: 60px;
 	line-height: 60px;
 	text-decoration: none;
+    -webkit-transition: color 0.5s linear;
+    -moz-transition: color 0.5s linear;
+    -ms-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
+    transition: color 0.5s linear;
 }
 .nav-menu li a:hover {
-	background: #f0c44c;
+	background: #e2b442;
 	color: #fff;
 }
 
@@ -279,16 +310,22 @@ a:hover {
     }
 */
 
+body { 
+}
+
 .body {
 	background-color: #2c2f34;
     display: table;
-    height: auto;
+    position: relative;
     overflow: auto;
 	width: 100%;
+	min-height: 100%;
 }
 
 .body-middle-from-mid {
     display: table-cell;
+    position: relative;
+    height: 100%;
     vertical-align: middle;
 }
 
@@ -338,15 +375,17 @@ a:hover {
 .body-middle-from-top {
     display: table-cell;
     position: relative;
-    padding-top: 45px;
+    padding-top: 110px;
 }
 
 .stock-header {
 	width: 100%;
 	height: 55px;
 	z-index: 100;
-	position: relative;
+	margin-top: 45px;
+	position: fixed;
 	background-color: #6c6c6c;
+    box-shadow: 0 1px 4px 1px rgba(0,0,0,0.6);
 }
 
 .stock-header .stock-name {
@@ -376,6 +415,10 @@ a:hover {
 	color: #c5c4c3;
 	display: block;
 	height: 100%;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 
@@ -391,6 +434,8 @@ a:hover {
 
 .stock-header .stock-menu li.active {
 	background-color: #2c2f34;
+	height: 67px;
+    box-shadow: 0 0px 0px 0px rgba(0,0,0,0.6);
 }
 
 .stock-header .stock-menu li.active a{
@@ -400,9 +445,8 @@ a:hover {
 
 .stock-detail-lefter {
 	float: left;
-	position: absolute;
-	height: 500px;
-	margin: -50 20 20 20;
+	position: fixed;
+	margin: 56 20 20 20;
 	padding: 0 20 20 20;
 	width: 250px;
 	background-color: #2c2f34;
@@ -488,7 +532,11 @@ a:hover {
 }
 
 .value{
-	color: #f4f3f1;
+	color: #f8d17c;
+}
+
+.value2{
+	color: #a0d3de;
 }
 
 .max-min h1 {
@@ -563,7 +611,7 @@ a:hover {
     float: right;
     width: calc(100% - 305px);
     margin: 3 18 10 0;
-    padding: 0 0 0 0;
+    padding: 0 0 50 0;
     position: relative;
 }
 
@@ -573,10 +621,13 @@ a:hover {
 	text-align: left;
 	font-size: 14px;
 	padding: 4 0 0 14;
+	color: #243f48;
+	font-weight: bold;
 	letter-spacing: 1px;
 	background-color: #989393;
 	border-top-left-radius: 11px;
 	border-top-right-radius: 11px;
+	text-shadow: 0px 1px 1px #cdcece;
 }
 
 .body-stock .headerlabel p {
@@ -588,45 +639,37 @@ a:hover {
 	color: #914c02;
 	font-size: 12px;
 	letter-spacing: 0px;
+	text-shadow: 0px 0px 0px #cdcece;
 }
 
-.body-stock #summary {
-	height: 35%;
+
+.body-stock #overviewpanel {
 	width: 100%;
-	position: absolute;
+	margin-bottom: 100px;
 }
 
 .body-stock .graph {
-	height: 35%;
-	width: 70%;
-}
-
-.body-stock #company {
-	position: relative;
-	clear: both;
-	float: none;
-	height: 100%;
 	width: 100%;
 }
 
-.body-stock #company #company-detail {
+.body-stock #company-detail {
 	border: 3px solid #989393;
 	border-radius: 15px;
 	margin: 5 0 20 0;
 	text-align: left;
 }
 
-.body-stock #company #company-detail .comp-detail-container{
+.body-stock #company-detail .comp-detail-container{
 	padding: 20 20 20 20;
 }
 
-.body-stock #company #company-detail .comp-detail-row {
+.body-stock #company-detail .comp-detail-row {
 	display: table;
 	width: 100%;
 }
 
 
-.body-stock #company #company-detail .comp-subject{
+.body-stock #company-detail .comp-subject{
 	margin: 0 0 0 0;
 	width: 150px;
 	display: table-cell;
@@ -634,53 +677,53 @@ a:hover {
 }
 
 
-.body-stock #company #company-detail .comp-value{
+.body-stock #company-detail .comp-value{
 	margin: 0 0 0 0;
 	display: table-cell;
 }
 
-.body-stock #company #major-shareholders {
+.body-stock #major-shareholders {
 	border: 3px solid #989393;
 	border-radius: 15px;
 	margin: 0 0 0 0;
 }
 
-.body-stock #company #major-shareholders #major-shdrs-container {
+.body-stock #major-shareholders #major-shdrs-container {
 	padding: 15 5 15 5;
 }
 
-.body-stock #company #major-shareholders #major-shdrs-row {
+.body-stock #major-shareholders #major-shdrs-row {
 	display: table;
 	width: 100%;
 	margin-bottom: 2px;
 }
 
-.body-stock #company .ms-header {
+.body-stock .ms-header {
 	padding-bottom: 10px;
 }
 
-.body-stock #company .ms-subject {
+.body-stock .ms-subject {
 	font-size: 14px;
 	color: #aaaaab;
 }
 
-.body-stock #company .ms-value {
+.body-stock .ms-value {
 	font-size: 12px;
 }
 
-.body-stock #company #major-shareholders #major-shdrs-row .major-shdrs-rank{
+.body-stock #major-shareholders #major-shdrs-row .major-shdrs-rank{
 	width: 40px;
 }
 
-.body-stock #company #major-shareholders #major-shdrs-row .major-shdrs-name{
+.body-stock #major-shareholders #major-shdrs-row .major-shdrs-name{
 	width: 300px;
 }
 
-.body-stock #company #major-shareholders #major-shdrs-row .major-shdrs-sshare{
+.body-stock #major-shareholders #major-shdrs-row .major-shdrs-sshare{
 	width: 100px;
 }
 
-.body-stock #company #major-shareholders #major-shdrs-row .major-shdrs-pshare{
+.body-stock #major-shareholders #major-shdrs-row .major-shdrs-pshare{
 	width: 90px;
 }
 
@@ -698,32 +741,33 @@ a:hover {
 	width: 20px;
 }
 
-.body-stock #company #dividend-policy {
+.body-stock #dividend-policy {
 	border: 3px solid #989393;
 	border-radius: 15px;
 	width: 30%;
 	display: table-cell;
 	margin-left: auto;
+	color: #bcbcbc;
 }
 
-.body-stock #company #dividend-policy #div-policy-container {
+.body-stock #dividend-policy #div-policy-container {
 	margin: 15 15 15 15;
 	font-size: 13px;
 	text-align: left;
 }
 
-.body-stock #company #latest-board{
+.body-stock #latest-board{
 	border: 3px solid #989393;
 	border-radius: 15px;
 	display: table-cell;
 	width: 70%;
 }
 
-.body-stock #company #latest-board-container{
+.body-stock #latest-board-container{
 	padding: 15 20 15 30;
 }
 
-.body-stock #company #latest-board #latest-board-row {
+.body-stock #latest-board #latest-board-row {
 	display: table;
 	margin-left: auto;
 	margin-right: auto;
@@ -731,28 +775,414 @@ a:hover {
 	margin-bottom: 2px;
 }
 
-.body-stock #company #latest-board .latest-board-name {
+.body-stock #latest-board .latest-board-name {
 	width: 200px;
 	display: table-cell;
 }
 
-.body-stock #company #latest-board .latest-board-position {
+.body-stock #latest-board .latest-board-position {
 	width: 150px;
 	display: table-cell;
 }
 
-.body-stock #company #latest-board .lb-header {
+.body-stock #latest-board .lb-header {
 	padding-bottom: 7px;
 }
 
-.body-stock #company #latest-board .lb-subject {
+.body-stock #latest-board .lb-subject {
 	color: #aaaaab;
 	font-size: 13px;	
 }
-.body-stock #company #latest-board .lb-value {
+.body-stock #latest-board .lb-value {
 	font-size: 12px;	
 	text-align: left;
 }
+
+#newstable {
+	width: 100%;
+	margin-top: 10px;
+	padding: 10 20 0 20;
+	text-align: left;
+}
+
+#newstable .newssubjectrow {	
+	display: table;
+	background-color: gray;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 10px;
+	border: 0.5px solid #71716d;
+}
+
+#newstable .newsrow {	
+	display: table;
+	margin-bottom: 5px;
+	padding-left: 10px;
+	font-size: 13px;
+	padding-right: 10px;
+}
+
+#newstable .news-date {
+	width: 170px;
+	display: table-cell;
+	color: #bacae4;
+	font-weight : 300;
+}
+
+#newstable .news-data {
+	display: table-cell;
+	color: #e1e1df;
+	font-weight : 300;
+	letter-spacing: 0.3;
+}
+
+#newstable .news-subject {
+	font-size: 16px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #243f48;
+	font-weight: normal;
+}
+
+#newstable .readicon {
+	margin-right: 10px;
+	margin-top: -5px;
+}
+
+#newstable hr {
+	border: 0.5px solid #3c3f43;
+	width: 97%;
+	margin: 0 0 5 10;
+	padding: 0 0 0 0;
+}
+
+.tabs input[type=radio] {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+.tabs {
+	width: 100%;
+	float: right;
+	list-style: none;
+	position: relative;
+	padding: 0;
+}
+
+.tabs li{
+	float: right;
+}
+
+.tabs-bg {
+	width: 160px;
+	height: 40px;
+	background-color: red;
+	display: block;
+	position relative;
+	float: right;
+}
+
+.tabs label {
+	display: block;
+    border-radius: 0 0 0 0;
+	color: #3a3a3b;
+	width: 60px;
+	font-size: 12px;
+	height: 25px;
+	line-height: 25px;
+	font-weight: normal;
+	cursor: pointer;
+	background-color: #555451;
+	position: relative;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+} 
+
+.tabs label:hover {
+    background: rgba(255,255,255,0.5);
+	top: 0;
+}
+	      
+[id^=tab]:checked + label {
+	background: #e5b645;
+	color: #ffffff;
+	top: 0;
+}
+	      
+[id^=tab]:checked ~ [id^=tab-content], [id^=tab]:checked ~ [id^=tab-content] > div {
+	display: block;
+}
+
+.tab-content{
+	z-index: 2;
+	display: none;
+	text-align: left;
+	overflow: hidden;
+	width: 100%;
+	font-size: 20px;
+	padding: 3 10 0 10;
+	color: white;
+	position: absolute;
+	top: 53px;
+	right: 0;
+	box-sizing: border-box;
+}
+
+.tab-content > div{
+	display: none;
+    -webkit-animation-duration: 0.5s;
+	-o-animation-duration: 0.5s;
+	-moz-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+}
+
+
+#scorelist {
+	float: left;
+	padding: 0 0 15 0;
+	margin-left: 8px;
+	margin-bottom: 8px;
+}
+
+.styled-select {
+	display: inline-block;
+	float: left;
+	margin-left: 0;
+	text-align: center;
+	background: none;
+	border-radius: 11px;
+	border: 2px solid #6a6a6c;
+	font-size: 11px;
+	padding-top: 4px;
+	margin-right: 10px;
+	width: 80px;
+	height: 50px;
+	color: #9ce2ff;
+}
+
+.styled-select select {
+	display: block;
+	background: black;
+	width: 70px;
+	padding: 5px;
+	color: #e8e8e8;
+	font-size: 14px;
+	border: 0;
+	margin-top: 2px;
+	margin-left: auto;
+	margin-right: auto;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.styled-select select:active {
+	border: none;
+}
+
+#scorelist .graph-scorebox {
+	display: inline-block;
+	float: left;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	padding-top: 4px;
+	margin-right: 10px;
+	font-size: 10px;
+	color: #fff;
+	border-radius: 11px;
+	border: 2px solid #6a6a6c;
+}
+
+#scorelist .score {
+	display: block;
+	background-color: #676766;
+	width: 39px;
+	height: 21px;
+	line-height: 22px;
+	font-size: 17px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	color: #f4c85d;
+
+}
+
+.graphnav-panel {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	width: 100%;
+}
+
+.graphnav-menu {
+	width: 100%;
+}
+
+
+.graphnav-menu input {
+	height: 29px;
+	width: 100px;
+	margin-left: 49;
+}
+
+.typicalbtn {
+	border-radius: 6px;
+    padding: 0;
+	box-shadow: none;
+	text-align: center;
+	border: 0;
+	font-weight: 500;
+	font-size: 12px;	
+	cursor: pointer;
+	border: 3px solid #6a6a6c;
+	background: #818183;
+	color: #353536;
+}
+
+#scorelist input {
+	height: 50px;
+	width: 70px;
+	border-radius: 11px;
+	font-size: 14px;
+}
+
+.typicalbtn:hover {
+	  background: #919292;
+	  outline: none;
+	  color: #5e5e60;
+	  -webkit-box-shadow: none;
+	  box-shadow: none;
+}
+
+.typicalbtn:active {
+	  top: 1px;
+	  background: #919292;
+	  outline: none;
+	  -webkit-box-shadow: none;
+	  box-shadow: none;
+}
+
+.body-tabs {
+	width: 100%;
+}
+
+.body-tabs .tab-list {
+	list-style-type: none;
+	font-size: 0;
+	display: inline-block;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+.body-tabs #type-tab {
+	float: left;
+}
+
+.body-tabs #sheet-tab {
+	float: middle;
+}
+
+.body-tabs #duration-tab {
+	float: right;
+}
+
+.body-tabs .tab-list li {
+	list-style-type: none;
+	display: inline;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	border: 0;
+}
+
+.body-tabs .tab-list .tab-label {
+	height: 32px;
+	line-height: 32px;
+	font-weight: 400;
+	font-size: 11px;
+	color: #acacac;
+	border-top: 2px solid #989393;
+	border-left: 2px solid #989393;
+	border-right: 2px solid #989393;
+	margin: 0 0 0 0;
+}
+
+#type-tab .tab-label {
+	width: 101px;
+}
+
+#sheet-tab .tab-label {
+	width: 130px;
+}
+
+#duration-tab .tab-label {
+	width: 80px;
+}
+
+.body-tabs input[type="radio"] {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+.body-tabs .tab-list [type="radio"]:checked + .tab-label {
+    background: #e98638;
+    color: #fdf3c5;
+    z-index: 1;
+}
+
+.tab-pane {
+	width: 100%;
+	height: 800px;
+	border: 2px solid #989393;
+	position: relative;
+	display: table;
+	padding: 0 5 0 6;
+}
+
+.tabpane-row {
+	display: table;
+}
+
+.tabpane-row div {
+	display: table-cell;
+	font-size: 11px;
+	text-align: left;
+}
+
+.tabpane-row .tp-header {
+	font-size: 12px;
+	padding-bottom: 4px;
+	border-bottom: 1px solid white;
+}
+
+.tabpane-row .tp-field {
+	width: 300px;
+}
+
+.tabpane-row .tp-value {
+	width: 100px;
+	text-align: right;
+	padding-top: 6px;
+}
+
+.tabpane-row .tp-change {
+	width: 58px;
+	text-align: right;
+}
+
+#colorbar {
+	width: 100%;
+	height: 10px;
+	background-color: #df7a2b;
+	margin-bottom: 5px;
+}
+
 
 .footer {
     box-shadow: inset 0 18px 14px -20px rgba(0,0,0,0.6);
@@ -794,3 +1224,4 @@ a:hover {
 .highlighted {
 	color: #fac76c;
 }
+

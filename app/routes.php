@@ -21,9 +21,15 @@ Route::get('/','PagesController@home');
 
 Route::get('/testt','PagesController@testt');
 
+Route::get('/master','PagesController@master');
+
 Route::get('/stock','PagesController@stock');
 
+Route::get('/company','PagesController@company');
+
 Route::get('/financial','PagesController@financial');
+
+Route::get('/news','PagesController@news');
 
 Route::get('/login','PagesController@login');
 

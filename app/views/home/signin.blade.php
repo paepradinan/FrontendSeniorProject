@@ -86,6 +86,7 @@ $(document).ready(function () {
 
 	<div class="slideout-menu">
 		<ul class="nav">
+			<span class="navheaderpanel">MEMBER</span>		
 			<div class="member-panel">
 				<div class="memberp-greet">
 					<ul>
@@ -97,18 +98,20 @@ $(document).ready(function () {
 			</div>
 			<div class="member-menu">
 				<ul>
-					<li><a href='#'>SIGN IN</a></li>
+					<li><a href='#'><object type="image/svg+xml" class="navicon" data="img/icon_signin.svg"></object>SIGN IN</a></li>
 				</ul>
 			</div>
+			<span class="navheaderpanel">SEARCH</span>		
 			<div class="input-group">
 				<form method="get" action="/search" id="search">
 					<input name="q" type="text" placeholder="Search Symbol" />
     		</div> 
+			<span class="navheaderpanel">MENU</span>		
     		<div class="nav-menu">
 				<li role="presentation"><a href="#">NEWS</a></li>
-				<li role="presentation"><a href="#">THAI MARKET</a></li>
-				<li role="presentation"><a href="#">INDUSTRY</a></li>
-				<li role="presentation"><a href="#">WORLD</a></li>
+				<li role="presentation"><a href="#">MARKET OVERVIEW</a></li>
+				<li role="presentation"><a href="#">BY SECTORS</a></li>
+				<li role="presentation"><a href="#">WORLD MARKETS</a></li>
 			</div>
 		</ul>
 	</div>

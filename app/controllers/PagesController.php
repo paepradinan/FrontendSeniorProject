@@ -1,6 +1,8 @@
 <?php
 
 class PagesController extends BaseController{
+    protected $layout = 'layouts.master';
+
 	public function home(){
 		return View::make('/home/home');
 	}
@@ -14,15 +16,27 @@ class PagesController extends BaseController{
 	}
 
 	public function stock(){
-		return View::make('/home/stock');
+    	return $this->layout->content = View::make('/home/stock', array('title' => 'STOCK'));
+	}
+
+	public function company(){
+    	return $this->layout->content = View::make('/home/company', array('title' => 'COMPANY'));
 	}
 
 	public function financial(){
-		return View::make('/home/financial');
+    	return $this->layout->content = View::make('/home/financial', array('title' => 'FINANCIAL'));
+	}
+
+	public function news(){
+    	return $this->layout->content = View::make('/home/news', array('title' => 'NEWS'));
 	}
 
 	public function testt(){
-		return View::make('/home/testframe');
+    	return $this->layout->content = View::make('/home/testframe', array('title' => 'ABA'));
+	}
+
+	public function master(){
+		return View::make('/layouts/master');
 	}
 }
 
