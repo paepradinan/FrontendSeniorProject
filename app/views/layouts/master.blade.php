@@ -114,17 +114,15 @@ $(document).ready(function () {
         </div> 
       <span class="navheaderpanel">MENU</span>    
         <div class="nav-menu">
-        <li role="presentation"><a href="#">NEWS</a></li>
-        <li role="presentation"><a href="#">MARKET OVERVIEW</a></li>
-        <li role="presentation"><a href="#">BY SECTORS</a></li>
-        <li role="presentation"><a href="#">WORLD MARKETS</a></li>
+        <li role="presentation"><a href="/FrontEnd/public/marketnews">NEWS</a></li>
+        <li role="presentation"><a href="/FrontEnd/public/market">MARKET OVERVIEW</a></li>
+        <li role="presentation"><a href="/FrontEnd/public/sector">BY SECTORS</a></li>
+        <li role="presentation"><a href="/FrontEnd/public/world">WORLD MARKETS</a></li>
       </div>
     </ul>
   </div>
 
-  <div class="body slideout-menu-off">
-    @yield('content')
-  </div>
+  @yield('content')
 
   <div class="footer">
     <div class="footer-text">

@@ -141,6 +141,7 @@ a:hover {
 	position: relative;
 	display: inline-block;
 	font-weight: bold;
+	color: #40444a;
 	font-size: 11px;
 	border-bottom: 1px solid #818181;
 	text-shadow: 0px 0px 1px #cdcece;
@@ -1183,6 +1184,131 @@ body {
 	margin-bottom: 5px;
 }
 
+#mainmenu-body {
+	display: table-cell;
+	background-color: #2c2f34;
+	position: relative;
+	width: 100%;
+	color: white;
+}
+
+#mainmenu-header {
+	width: 100%;
+	height: 50px;
+	line-height: 55px;
+	background: #6c6c6c;
+	margin-top: 45px;
+	font-size: 22px;
+	color: #cbcaca;
+	text-align: right;
+	padding-right: 50px;
+	position: fixed;
+	z-index: 100;
+	text-shadow: 0px 1px 1px #111;
+
+}
+
+.triangle-down {
+	position: fixed;
+	top: 95px;
+	right: 90px;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-top: 30px solid #6c6c6c;
+	z-index: 100;
+}
+
+#market-body {
+	display: table;
+	width: 100%;
+	z-index: 10;
+	height: 100;
+	top: 95px;
+	position: relative;
+}
+
+#market-body .section {
+	height: 100%;
+}
+
+#market-body .intro {
+	height: 100%;
+}
+
+.market-row {
+	width: 100%;
+	display: table;
+	position: relative;
+	height: 100%;
+	padding: 0 50 92 1%;
+}
+
+.market-panel {
+	width: 33%;
+	height: 100%;
+	display: table-cell;
+	position: relative;
+	background: transparent;
+}
+
+.market-panel-inside {
+	margin: 3% 2% 2% 2%;
+	height: 95%;
+	border-radius: 11px;
+	padding: 5 5 5 5;
+	border: 2px solid #b8b7b7;
+}
+
+.market-panel-inside h1{
+	font-size: 27px;
+	color: #f3c35b;
+	text-align: left;
+	margin-left: 15px;
+	margin-top: 4px;
+}
+
+.mnews-channel {
+	height: 88%;
+	width: 92%;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #40444a;
+	display: table;
+	border-bottom-right-radius: 11px;
+	border-bottom-left-radius: 11px;
+	font-size: 12px;
+}
+
+.mnews-item {
+	display: table;
+	width: 100%;
+}
+
+.mnews-date {
+	display: table-cell;
+	background: green;
+	width: 20%;
+}
+
+.mnews-title {
+	display: table-cell;
+	background-color: red;
+	width: 60%;
+}
+
+.mnews-desc {
+	display: table-cell;
+	background-color: purple;
+	width: 5%;
+
+}
+
+.mnews-author {
+	display: table-cell;
+	background-color: #e0129a;
+	width: 15%;
+}
 
 .footer {
     box-shadow: inset 0 18px 14px -20px rgba(0,0,0,0.6);

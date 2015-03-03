@@ -31,6 +31,22 @@ class PagesController extends BaseController{
     	return $this->layout->content = View::make('/home/news', array('title' => 'NEWS'));
 	}
 
+	public function marketnews(){
+    	return $this->layout->content = View::make('/home/marketnews', array('title' => 'MARKET NEWS'));
+	}
+
+	public function market(){
+    	return $this->layout->content = View::make('/home/market', array('title' => 'MARKET'));
+	}
+
+	public function sector(){
+    	return $this->layout->content = View::make('/home/sector', array('title' => 'sector'));
+	}
+
+	public function world(){
+    	return $this->layout->content = View::make('/home/world', array('title' => 'world'));
+	}
+
 	public function testt(){
     	return $this->layout->content = View::make('/home/testframe', array('title' => 'ABA'));
 	}

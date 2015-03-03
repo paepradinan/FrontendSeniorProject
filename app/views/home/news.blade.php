@@ -1,6 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
+  <div class="body slideout-menu-off">
 			<div class="stock-detail-lefter">
 				<h1 id="s0-symbol">SIRI</h1>
 				<hr>
@@ -173,5 +174,5 @@
 				</div>
 			</div>
 		</div>
-
+ </div>
 @stop

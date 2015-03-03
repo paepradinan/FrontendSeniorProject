@@ -34,3 +34,11 @@ Route::get('/news','PagesController@news');
 Route::get('/login','PagesController@login');
 
 Route::get('/signin','PagesController@signin');
+
+Route::get('/marketnews','PagesController@marketnews');
+
+Route::get('/market','PagesController@market');
+
+Route::get('/sector','PagesController@sector');
+
+Route::get('/world','PagesController@world');
