@@ -75,7 +75,7 @@ $(document).ready(function () {
           </div>          
           <div class="col-md-3"></div>
           <div class="col-md-2">  
-                <a href="/FrontEnd/public/"><img class="nav-logo" src='img/weblogo2.jpg' /></a>
+                <a href="/FrontEnd/public/stock"><img class="nav-logo" src='img/weblogo2.jpg' /></a>
           </div>
           <div class="col-md-2"></div>
           <div class="col-md-3">
