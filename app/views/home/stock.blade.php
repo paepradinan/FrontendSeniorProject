@@ -148,29 +148,31 @@
 			          <label id="tab-graph" for="tab1">GRAPH</label>
 			          <div id="tab-content1" class="tab-content">
 					    <div class="animated  fadeInRight">
-					    	<ul id="scorelist">
-					    		<li><input type="submit" value="UPDATE" class="typicalbtn"></li>
-						    	<li class="styled-select">
-						    		TIME FRAME
-									<select name="mydropdown">
-										<option value="day">Day</option>
-										<option value="week">Week</option>
-										<option value="month">Month</option>
-										<option value="year">Year</option>
-									</select>
-								</li>
-					    		<li class="graph-scorebox">EMA1<span class="score">15</span></li>
-					    		<li class="graph-scorebox">EMA2<span class="score">45</span></li>
-					    		<li class="graph-scorebox">EMA3<span class="score">100</span></li>
-					    		<li class="graph-scorebox">MACD1<span class="score">12</span></li>
-					    		<li class="graph-scorebox">MACD2<span class="score">26</span></li>
-					    		<li class="graph-scorebox">SIGNAL<span class="score">9</span></li>
-					    		<li class="graph-scorebox">STO<span class="score">14</span></li>
-					    		<li class="graph-scorebox">%K<span class="score">3</span></li>
-					    		<li class="graph-scorebox">%D<span class="score">3</span></li>
-					    		<li class="graph-scorebox">RSI<span class="score">14</span></li>
-					    		<li class="graph-scorebox">MAV<span class="score">9</span></li>
-							</ul>
+							<table class="linear-table">
+								<tr>
+									<td><div class="graph-scorebox">EMA1<span class="score">15</span></div></td>
+									<td><div class="graph-scorebox">EMA2<span class="score">45</span></div></td>
+									<td><div class="graph-scorebox">EMA3<span class="score">100</span></div></td>
+									<td><div class="graph-scorebox">MACD1<span class="score">12</span></div></td>
+									<td><div class="graph-scorebox">MACD2<span class="score">26</span></div></td>
+									<td><div class="graph-scorebox">SIGNAL<span class="score">9</span></div></td>
+									<td><div class="graph-scorebox">STO<span class="score">14</span></div></td>
+									<td><div class="graph-scorebox">%K<span class="score">3</span></div></td>
+									<td><div  class="graph-scorebox">%D<span class="score">3</span></div></td>
+									<td><div class="graph-scorebox">RSI<span class="score">14</span></div></td>
+									<td><div class="graph-scorebox">MAV<span class="score">9</span></div></td>
+									<td><div class="styled-select">
+										TIME FRAME
+										<select name="mydropdown">
+											<option value="day">Day</option>
+											<option value="week">Week</option>
+											<option value="month">Month</option>
+											<option value="year">Year</option>
+										</select>
+									</div></td>
+									<td><input type="submit" value="UPDATE" class="typicalbtn"></td>
+								</tr>
+							</table>
 							<img class="graph" src='img/graph1.png'/>
 							<img class="graph" src='img/graph2.png'/>
 							<img class="graph" src='img/graph1.png'/>
