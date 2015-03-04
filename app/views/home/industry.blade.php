@@ -99,22 +99,22 @@
 	</div>
 		<div class="body-middle-from-top">
 			<div class="body-stock">
+				<div class="indust-row indust-subject">
+						<div class="i-industry">Industry</div>
+						<div class="i-sector">Sector</div>
+						<div class="i-symbol">Symbol</div>
+						<div class="i-prior">Prior</div>
+						<div class="i-last">Last</div>
+						<div class="i-change">Change</div>
+						<div class="i-pchange">%Change</div>
+						<div class="i-volume">Volume (MB)</div>
+						<div class="i-value">Value (MB)</div>
+						<div class="i-pe">P/E</div>
+						<div class="i-pbv">P/BV</div>
+						<div class="i-dvdyield">Dvd. Yield</div>
+				</div>
 				<div class="indust-list">
 					<div class="indust-table">
-						<div class="indust-row indust-subject">
-							<div class="i-industry">Industry</div>
-							<div class="i-sector">Sector</div>
-							<div class="i-symbol">Symbol</div>
-							<div class="i-prior">Prior</div>
-							<div class="i-last">Last</div>
-							<div class="i-change">Change</div>
-							<div class="i-pchange">%Change</div>
-							<div class="i-volume">Volume (MB)</div>
-							<div class="i-value">Value (MB)</div>
-							<div class="i-pe">P/E</div>
-							<div class="i-pbv">P/BV</div>
-							<div class="i-dvdyield">Dvd. Yield</div>
-						</div>
 						<div class="indust-row indust-data">
 							<div class="i-industry">Agro & Food Industry</div>
 							<div class="i-sector">Agribusiness</div>
@@ -143,6 +143,7 @@
 							<div class="i-pbv">4.91</div>
 							<div class="i-dvdyield">4.96</div>
 						</div>
+					@for ($i = 0; $i < 50; $i++)
 						<div class="indust-row indust-data">
 							<div class="i-industry">Agro & Food Industry</div>
 							<div class="i-sector">Food & Beverage</div>
@@ -157,6 +158,7 @@
 							<div class="i-pbv">4.91</div>
 							<div class="i-dvdyield">4.96</div>
 						</div>
+					@endfor
 						<div class="indust-row indust-data">
 							<div class="i-industry">Agro & Food Industry</div>
 							<div class="i-sector">Food & Beverage</div>

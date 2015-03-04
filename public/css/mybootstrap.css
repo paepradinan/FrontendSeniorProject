@@ -1076,7 +1076,7 @@ body {
 
 .linear-table {
 	width: 100%;
-	margin-bottom: 20px;
+	margin-bottom: 28px;
 }
 
 .linear-table, .linear-table td {
@@ -1778,14 +1778,18 @@ body {
 .indust-list {
 	width: 100%;
 	background: black;
-	margin-bottom: 14px;
-	margin-top: 7px;
+	margin-bottom: 22px;
+	max-height: 440px;
+	overflow: auto;
+	border: 2px solid #6c6c6c;
+	border-top: none;
+	margin-top: -2px;
+	z-index: 2;
 }
 
 .indust-table {
 	width: 100%;
 	display: table;
-	border: 2px solid #6c6c6c;
 	padding: 0 0 3 0;
 }
 
@@ -1810,7 +1814,9 @@ body {
 	background: #e98638;
 	color: black;
 	height: 22px;
+	z-index: 100;
 	line-height: 22px;
+	margin-top: 7px;
 }
 
 .indust-data {
