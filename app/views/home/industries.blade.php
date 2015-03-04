@@ -64,15 +64,29 @@ $(document).ready(function () {
 										<div class="indus-value"></div>
 									</div>
 				                </li>
-				                <li>
-				                  <span>Child</span> 
+				                <li>								
+				                	<div class="indus-row indus-data">
+										<div class="indus-name">Agro & Food Industry</div>
+										<div class="indus-prior">419.86</div>
+										<div class="indus-last">418.78</div>
+										<div class="indus-change">-1.08</div>
+										<div class="indus-pchange">-0.26</div>
+										<div class="indus-volume"></div>
+										<div class="indus-value"></div>
+									</div>
 				                </li>
-				                <li>
-				                  <span>Child</span> 
+				                <li>								
+				                	<div class="indus-row indus-data">
+										<div class="indus-name">Agro & Food Industry</div>
+										<div class="indus-prior">419.86</div>
+										<div class="indus-last">418.78</div>
+										<div class="indus-change">-1.08</div>
+										<div class="indus-pchange">-0.26</div>
+										<div class="indus-volume"></div>
+										<div class="indus-value"></div>
+									</div>
 				                </li>
-				                <li>
-				                  <span>Child</span> 
-				                </li>
+				              
 				            </ul>
 				        </li>
 				        <li>

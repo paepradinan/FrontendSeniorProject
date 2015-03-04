@@ -954,16 +954,14 @@ body {
 }
 
 .styled-select {
-	display: inline-block;
-	float: left;
-	margin-left: 0;
+	display: block;
+	margin: auto;
 	text-align: center;
 	background: none;
 	border-radius: 11px;
 	border: 2px solid #6a6a6c;
 	font-size: 11px;
 	padding-top: 4px;
-	margin-right: 10px;
 	width: 80px;
 	height: 50px;
 	color: #9ce2ff;
@@ -989,21 +987,25 @@ body {
 	border: none;
 }
 
-#scorelist .graph-scorebox {
-	display: inline-block;
-	float: left;
+.graph-scorebox {
+	display: block;
+	margin: auto;
 	text-align: center;
 	width: 50px;
 	height: 50px;
 	padding-top: 4px;
-	margin-right: 10px;
 	font-size: 10px;
 	color: #fff;
 	border-radius: 11px;
 	border: 2px solid #6a6a6c;
 }
 
-#scorelist .score {
+#scorelist li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.graph-scorebox .score {
 	display: block;
 	background-color: #676766;
 	width: 39px;
@@ -1039,18 +1041,17 @@ body {
 .typicalbtn {
 	border-radius: 6px;
     padding: 0;
+    display: block;
 	box-shadow: none;
 	text-align: center;
 	border: 0;
 	font-weight: 500;
+	margin: auto;
 	font-size: 12px;	
 	cursor: pointer;
 	border: 3px solid #6a6a6c;
 	background: #818183;
 	color: #353536;
-}
-
-#scorelist input {
 	height: 50px;
 	width: 70px;
 	border-radius: 11px;
@@ -1071,6 +1072,21 @@ body {
 	  outline: none;
 	  -webkit-box-shadow: none;
 	  box-shadow: none;
+}
+
+.linear-table {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.linear-table, .linear-table td {
+	color: white;
+}
+
+.linear-table td {
+	align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .body-tabs {
@@ -1722,3 +1738,135 @@ body {
     -o-transition: background 0.2s linear;
     transition: background 0.2s linear;
 }
+
+.industry-lefter {
+	margin-top: 66px;
+}
+
+.indus-label #s0-symbol {
+	color: #fcece1;
+	margin-left: 14px;	
+	margin-top: 4px;
+}
+
+.indus-label #i0-industry {
+	font-size: 14px;
+	padding: 0 0 0 0;
+	margin: -2 0 0 14;
+	color: #f7ddca;
+}
+
+.indus-label {
+	width: 244px;
+	height: 64px;
+	background: #e98638;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin: 0 0 0 -20;
+	padding: 1 0 0 0;
+}
+
+.indus-detail #s2-industry {
+	margin-top: 9px;
+}
+
+
+.indus-detail #s3-sector {
+	margin-bottom: 6px;
+}
+
+.indust-list {
+	width: 100%;
+	background: black;
+	margin-bottom: 14px;
+	margin-top: 7px;
+}
+
+.indust-table {
+	width: 100%;
+	display: table;
+	border: 2px solid #6c6c6c;
+	padding: 0 0 3 0;
+}
+
+.indust-row {
+	display: table;
+	width: 100%;
+	font-size: 12px;
+	text-align: left;
+}
+
+.indust-data:hover {
+	background: #323232;
+	transition: background 0.1s linear;
+}
+
+.indust-row > div {
+	display: table-cell;
+}
+
+.indust-subject {
+	border-bottom: 1px solid gray;
+	background: #e98638;
+	color: black;
+	height: 22px;
+	line-height: 22px;
+}
+
+.indust-data {
+	margin-top: 2px;
+	color: #c6c4c4;
+}
+
+.indust-row .i-industry {
+	width: 17%;
+	padding-left: 2px;
+}
+
+.indust-row .i-sector {
+	width: 18%;
+}
+
+.indust-row .i-symbol {
+	width: 8%;
+}
+
+.indust-row .i-prior {
+	width: 7%;
+}
+
+.indust-row .i-last {
+	width: 7%;
+}
+
+.indust-row .i-change {
+	width: 6%;
+}
+
+.indust-row .i-pchange {
+	width: 6%;
+}
+
+.indust-row .i-volume {
+	width: 8%;
+}
+
+.indust-row .i-value {
+	width: 7%;
+}
+
+.indust-row .i-pe {
+	width: 5%;
+}
+
+.indust-row .i-pbv {
+	width: 5%;
+}
+
+.indust-row .i-dvdyield {
+	font-size: 11px;
+	width: 6%;
+}
+
+
+
