@@ -28,7 +28,8 @@
 <div id="mainmenu-body">
 	<div id="mainmenu-header">MARKET NEWS</div>
 	<div class="triangle-down"></div>
-	<div id="market-body">		<div class="section" id="section0">
+	<div id="market-body">		
+		<div class="section" id="section0">
 			<div class="intro">
 				<div class="market-row">
 					<div class="market-panel">

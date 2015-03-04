@@ -10,6 +10,7 @@
 
 
 <script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="./js/bootstrap-treeview.js"></script>
 <script type="text/javascript">
 $(document).ready(function () {
     $('.slideout-menu-toggle').on('click', function(event){
@@ -116,7 +117,7 @@ $(document).ready(function () {
         <div class="nav-menu">
         <li role="presentation"><a href="/FrontEnd/public/marketnews">NEWS</a></li>
         <li role="presentation"><a href="/FrontEnd/public/market">MARKET OVERVIEW</a></li>
-        <li role="presentation"><a href="/FrontEnd/public/sector">BY SECTORS</a></li>
+        <li role="presentation"><a href="/FrontEnd/public/industries">INDUSTRIES</a></li>
         <li role="presentation"><a href="/FrontEnd/public/world">WORLD MARKETS</a></li>
       </div>
     </ul>

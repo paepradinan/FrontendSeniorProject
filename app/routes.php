@@ -39,6 +39,6 @@ Route::get('/marketnews','PagesController@marketnews');
 
 Route::get('/market','PagesController@market');
 
-Route::get('/sector','PagesController@sector');
+Route::get('/industries','PagesController@industries');
 
 Route::get('/world','PagesController@world');
