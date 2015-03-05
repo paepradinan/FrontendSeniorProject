@@ -1874,5 +1874,16 @@ body {
 	width: 6%;
 }
 
-
+#mk-menu {
+	float: left;
+	position: fixed;
+	width: 250px;
+	margin: 115 0 0 20;
+	height: 77%;
+	background: transparent;
+	border: 2px solid gray;
+	border-radius: 11px;
+	background-color: #2c2f34;
+	z-index: 700;
+}
 
