@@ -71,15 +71,13 @@ $(document).ready(function () {
     <navi>
       <div class="container-fluid">
         <div class="row-fluid">
-          <div class="col-md-2">
+          <div class="header-browse">
             <a href="#" class="nav-browse slideout-menu-toggle">BROWSE</a>
           </div>          
-          <div class="col-md-3"></div>
-          <div class="col-md-2">  
+          <div class="header-logo">  
                 <a href="/FrontEnd/public/stock"><img class="nav-logo" src='img/weblogo2.jpg' /></a>
           </div>
-          <div class="col-md-2"></div>
-          <div class="col-md-3">
+          <div class="header-member">
             <ul class="nav-signin">
               <li><a href="#"><img class="nav-noti" src='img/notification.png'/></a></li>
               <li><a href="#"><img class='nav-userimg' src='img/b.tantikarun.jpg'/></a></li>

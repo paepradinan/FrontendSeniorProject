@@ -8,6 +8,22 @@
     border-bottom: 2px solid #ff0000;
 }
 
+.header .header-browse{
+	left: 23;
+	position: absolute;
+}
+
+.header .header-logo{
+	left: 43%;
+	right: 43%;
+	position: absolute;
+}
+
+.header .header-member{
+	right: 29;
+	position: absolute;
+}
+
 navi {
 	list-style-type: none;
 	position: relative;
