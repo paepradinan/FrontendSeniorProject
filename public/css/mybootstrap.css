@@ -812,7 +812,7 @@ body {
 
 #newstable .newssubjectrow {	
 	display: table;
-	background-color: gray;
+	background-color: #e98638;
 	width: 100%;
 	height: 30px;
 	line-height: 30px;
@@ -1779,7 +1779,7 @@ body {
 	width: 100%;
 	background: black;
 	margin-bottom: 22px;
-	max-height: 440px;
+	max-height: 400px;
 	overflow: auto;
 	border: 2px solid #6c6c6c;
 	border-top: none;
@@ -1874,6 +1874,52 @@ body {
 	width: 6%;
 }
 
+
+.indust-row .mk-symbol {
+	width: 10%;
+	padding-left: 2px;
+}
+
+.indust-row .mk-prior {
+	width: 7%;
+}
+
+.indust-row .mk-last {
+	width: 7%;
+}
+
+.indust-row .mk-change {
+	width: 6%;
+}
+
+.indust-row .mk-pchange {
+	width: 6%;
+}
+
+.indust-row .mk-volume {
+	width: 8%;
+}
+
+.indust-row .mk-value {
+	width: 7%;
+}
+
+.indust-row .mk-pe {
+	width: 5%;
+}
+
+.indust-row .mk-pbv {
+	width: 5%;
+}
+
+.indust-row .mk-dvdyield {
+	width: 6%;
+}
+
+.indust-row .mk-sign {
+	width: 5%;
+}
+
 #mk-menu {
 	float: left;
 	position: fixed;
@@ -1881,9 +1927,139 @@ body {
 	margin: 115 0 0 20;
 	height: 77%;
 	background: transparent;
-	border: 2px solid gray;
+	border: 2px solid #6c6c6c;
 	border-radius: 11px;
 	background-color: #2c2f34;
-	z-index: 700;
+	z-index: 300;
 }
 
+.mk-tree {
+    min-height:20px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.mk-tree ul {
+	padding: 0 0 0 0;
+}
+
+.mk-tree li {
+    list-style-type:none;
+    margin:0;
+    width: 100%;
+    padding: 0px 0px 0 0;
+    position:relative;
+}
+
+.mk-tree ul li ul li {
+	padding: 0px 0px 0 30px;
+}
+
+.mk-tree li::before, .mk-tree li::after {
+    content:'';
+    left:-20px;
+    position:absolute;
+    right:auto;
+}	
+.mk-tree li .mk-detail {
+    display:inline-block;
+    width: 100%;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    text-decoration:none;
+}
+
+.mk-tree ul ul {
+	background: #1e2126;
+}
+
+.mk-tree #mk-set span {
+	border-top-right-radius: 9px;
+	border-top-left-radius: 9px;
+}
+
+.mk-tree #mk-mai span {
+	border-bottom-right-radius: 9px;
+	border-bottom-left-radius: 9px;
+}
+
+.mk-tree #mk_mai.active span {
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+.mk-tree li.parent_li > span {
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+	padding-left: 20px;    
+	height: 60px;
+	font-size: 20px;
+    line-height: 60px;
+    border-bottom: 2px solid #6c6c6c;
+}
+
+.mk-tree li.parent_li span a {
+	color: #7e7d7c;
+}
+
+.mk-tree li.parent_li.active span {
+	background: #e98638;
+}
+
+.mk-tree li.parent_li.active span a {
+	color: #fcece2;
+	font-size: 34px;
+}
+
+.mk-tree li.parent_li.active + li > span {
+    border-top: 2px solid #6c6c6c;
+
+}
+
+.mk-tree li.parent_li > span:hover {
+    background: #868585;
+    transition: background 0.2s linear;
+}
+
+.mk-tree li.parent_li > span:hover a{
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.2s linear;
+}
+
+.mk-tree li.parent_li.active span:hover {
+	background: #e98638;
+}
+
+.mk-tree li.parent_li.active span:hover a{
+	color: #fcece2;
+}
+
+.mk-tree>ul>li::before, .mk-tree>ul>li::after {
+    border:0;
+}
+
+.mk-tree li:last-child::before {
+    height:30px;
+}
+
+.mk-tree table{
+	width:100%;
+	color: #fff;
+	padding: 0 0 0 0;
+	margin: 21 0 15 0;
+}
+
+.mk-tree td {
+    font-size: 14px;
+    padding-bottom: 3px;
+}
+
+.mk-detail .mk-data {
+	color: #f7d082;
+}
+
+.mk-detail .mk-subject {
+    color: #b7b6b5;
+}
