@@ -1,5 +1,78 @@
 @extends('layouts.master')
 
+<script>
+$(document).ready(function () {
+	<?php $symbol="SIQ"; ?>
+});
+</script>
+
+<script>
+$(document).ready(function () {
+	$('tab-radio').on('click', function(event){
+		if(document.getElementById("tab-1").checked){
+			if(document.getElementById("tab-6").checked){
+				if(document.getElementById("tab-3").checked){
+					//STAND-ALONE + INCOME STATEMENT + QUARTERLY
+					<?php $symbol="SIQ"; ?>
+				}
+				else if(document.getElementById("tab-4").checked){
+					//STAND-ALONE + CASH FLOW + QUARTERLY
+					<?php $symbol="SCQ"; ?>
+				}
+				else if(document.getElementById("tab-5").checked){
+					//STAND-ALONE + FINANCIAL POSITION + QUARTERLY
+					<?php $symbol="SFQ"; ?>
+					<?php header('Location: http://localhost/lhuksub/public/quote/stock/TRUE/news.php'); ?>
+				}
+			}
+			else if(document.getElementById("tab-7").checked){
+				if(document.getElementById("tab-3").checked){
+					//STAND-ALONE + INCOME STATEMENT + ANNUAL
+					<?php $symbol="SIA"; ?>
+				}
+				else if(document.getElementById("tab-4").checked){
+					//STAND-ALONE + CASH FLOW + ANNUAL
+					<?php $symbol="SCA"; ?>
+				}
+				else if(document.getElementById("tab-5").checked){
+					//STAND-ALONE + FINANCIAL POSITION + ANNUAL
+					<?php $symbol="SFA"; ?>
+				}
+			}
+		}
+		else if(document.getElementById("tab-2").checked){
+			if(document.getElementById("tab-6").checked){
+				if(document.getElementById("tab-3").checked){
+					//CONSOLIDATED + INCOME STATEMENT + QUARTERLY
+					<?php $symbol="CIQ"; ?>
+				}
+				else if(document.getElementById("tab-4").checked){
+					//CONSOLIDATED + CASH FLOW + QUARTERLY
+					<?php $symbol="CCQ"; ?>
+				}
+				else if(document.getElementById("tab-5").checked){
+					//CONSOLIDATED + FINANCIAL POSITION + QUARTERLY
+					<?php $symbol="CFQ"; ?>
+				}
+			}
+			else if(document.getElementById("tab-7").checked){
+				if(document.getElementById("tab-3").checked){
+					//CONSOLIDATED + INCOME STATEMENT + ANNUAL
+					<?php $symbol="CIA"; ?>
+				}
+				else if(document.getElementById("tab-4").checked){
+					//CONSOLIDATED + CASH FLOW + ANNUAL
+					<?php $symbol="CCA"; ?>
+				}
+				else if(document.getElementById("tab-5").checked){
+					//CONSOLIDATED + FINANCIAL POSITION + ANNUAL
+					<?php $symbol="CFA"; ?>
+				}
+			}
+	}
+});
+</script>
+
 @section('content')
 
   <div class="body slideout-menu-off">
